@@ -1,0 +1,8 @@
+server:
+  port: 8080
+okta:
+  oauth2:
+    issuer: https://dev-example123.okta.com/oauth2/default
+    client-id: #hidden
+    client-secret: #hidden
+    redirect-uri: /authorization-code/callback

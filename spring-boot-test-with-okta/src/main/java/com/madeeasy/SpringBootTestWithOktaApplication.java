@@ -32,7 +32,7 @@ public class SpringBootTestWithOktaApplication {
 
         System.out.println("isAuthenticated : " + authentication.isAuthenticated());
         // Access tokens
-        OidcIdToken idToken = oidcUser.getIdToken(); // ID token
+         String idToken = oidcUser.getIdToken().getTokenValue(); // ID token
 
         String accessToken = oAuth2AuthorizedClient.getAccessToken().getTokenValue();
 //        String refreshToken = oAuth2AuthorizedClient.getRefreshToken().getTokenValue(); .getRefreshToken() is
